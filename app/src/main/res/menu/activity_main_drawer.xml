@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_solicitudes"
+            android:icon="@drawable/ic_tarifa"
+            android:title="Tarifa"/>
+        <item
+            android:id="@+id/nav_conductor"
+            android:icon="@drawable/ic_conductor"
+            android:title="Conductores" />
+        <item
+            android:id="@+id/nav_vehiculo"
+            android:icon="@drawable/ic_vehiculo"
+            android:title="Ubicacion de Vehiculos" />
+        <item
+            android:id="@+id/nav_vehiculo_agregar"
+            android:icon="@drawable/ic_vehiculo"
+            android:title="Agregar Vehiculo" />
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_user"
+            android:title="Listado de Clientes" />
+    </group>
+</menu>

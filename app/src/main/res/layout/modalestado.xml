@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para el nombre -->
+
+
+    <!-- Campo para el estado -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete|textAutoCorrect"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo para la observación -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observación:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextObservacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la observación"
+        android:inputType="textMultiLine"
+        android:lines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

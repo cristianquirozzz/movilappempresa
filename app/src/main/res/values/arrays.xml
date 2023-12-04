@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones_tipo_documento">
+        <item>DNI</item>
+        <item>RUC</item>
+        <item>C.E.</item>
+    </string-array>
+    <string-array name="opciones_estado">
+        <item>A</item>
+        <item>P</item>
+    </string-array>
+    <string-array name="opciones_carga">
+        <item>CONGELADO</item>
+        <item>NO CONGELADO</item>
+    </string-array>
+    <string-array name="opciones_estados">
+        <item>PENDIENTE DE ATENCIÓN</item>
+        <item>VEHICULO ASIGNADO</item>
+        <item>VEHICULO EN TRANSITO</item>
+        <item>VEHICULO DETENIDO POR DESCANSO</item>
+        <item>VEHICULO DETENIDO POR INTERRUPCIÓN</item>
+        <item>ANULADO</item>
+        <item>RECHAZADO</item>
+        <item>FINALIZADO</item>
+    </string-array>
+</resources>

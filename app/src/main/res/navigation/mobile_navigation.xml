@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.HomeFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_solicitudes" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_solicitudes"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.AgregarTarifaFragment"
+        android:label="Agregar Tarifa"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_nav_solicitudes_to_detalleSolicitudFragment"
+            app:destination="@id/detalleSolicitudFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_conductor"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.AgregarConductorFragment"
+        android:label="Registrar Nuevo Conductor"
+        tools:layout="@layout/fragment_agregar_conductor"
+     />
+    <fragment
+        android:id="@+id/nav_vehiculo"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.UbicacionFragment"
+        android:label="Ver ubicaciones de vehiculos"
+        tools:layout="@layout/fragment_ubicacion"
+        />
+    <fragment
+        android:id="@+id/nav_vehiculo_agregar"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.AgregarVehiculoFragment"
+        android:label="Agregar Vehiculo"
+        tools:layout="@layout/fragment_agregar_vehiculo"
+        />
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.ClienteFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_clientes" />
+    <fragment
+        android:id="@+id/agregarEstadoFragment"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.AgregarTarifaFragment"
+        android:label="Registrar Nuevo Estado"
+        tools:layout="@layout/fragment_agregar_tarifa" />
+    <fragment
+        android:id="@+id/detalleSolicitudFragment"
+        android:name="pe.usat.moviles.rapidisimoapp_empresa.fragments.DetalleSolicitudFragment"
+        android:label="Detalle de Solicitud"
+        tools:layout="@layout/fragment_detalle_solicitud" >
+        <action
+            android:id="@+id/action_detalleSolicitudFragment_to_agregarEstadoFragment"
+            app:destination="@id/agregarEstadoFragment" />
+    </fragment>
+</navigation>
